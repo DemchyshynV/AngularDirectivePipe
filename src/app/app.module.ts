@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
-import { UserTransformPipe } from './user-transform.pipe';
+import { UserTransfPipe } from './user-transf.pipe';
+import { BoldDirective } from './bold.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserTransformPipe
+    UserTransfPipe,
+    BoldDirective,
   ],
   imports: [
     BrowserModule,
